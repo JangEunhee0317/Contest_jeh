@@ -70,7 +70,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>24</y>
+      <y>31</y>
       <width>571</width>
       <height>71</height>
      </rect>
@@ -88,15 +88,16 @@
     </property>
     <property name="text">
      <string>스트레칭 알람이 울릴 때 동작을 인식하는 웹캠 창이 나타납니다. 
-동시에 타이머는 일시적으로 멈춥니다. 동작인식  2가지가 랜덤으로 나타납니다.</string>
+동시에 타이머는 일시적으로 멈춥니다. 동작인식  2가지가 랜덤으로 나타납니다.
+완료하면 웹캠이 꺼지고 멈춘 타이머는 재개 됩니다.</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>100</y>
-      <width>251</width>
+      <y>120</y>
+      <width>261</width>
       <height>251</height>
      </rect>
     </property>
@@ -114,7 +115,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>210</y>
+      <y>217</y>
       <width>241</width>
       <height>251</height>
      </rect>
@@ -129,38 +130,13 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>410</y>
-      <width>281</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>한컴 말랑말랑 Regular</family>
-      <pointsize>10</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string>'Status : 5'가 될 때 완료 
-웹캠이 꺼지고 멈춘 타이머는 재개 됩니다.</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>390</y>
+      <y>400</y>
       <width>281</width>
-      <height>20</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -175,14 +151,15 @@
      <string notr="true">background-color: rgb(255, 255, 255, 0);</string>
     </property>
     <property name="text">
-     <string>일 때, 팔을 위로 뻗는 동작을 '유지' 하세요.</string>
+     <string>일 때, 팔을 위로 뻗는 동작을 '유지' 하세요.
+'Status : 5'가 될 때 완료</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>350</y>
+      <y>370</y>
       <width>261</width>
       <height>31</height>
      </rect>
@@ -201,7 +178,7 @@
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>138</y>
+      <y>150</y>
       <width>251</width>
       <height>41</height>
      </rect>
@@ -226,7 +203,7 @@
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>100</y>
+      <y>116</y>
       <width>301</width>
       <height>31</height>
      </rect>
@@ -245,7 +222,7 @@
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>170</y>
+      <y>180</y>
       <width>301</width>
       <height>41</height>
      </rect>
