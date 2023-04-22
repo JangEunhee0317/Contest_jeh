@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>418</width>
-    <height>330</height>
+    <width>412</width>
+    <height>326</height>
    </rect>
   </property>
   <property name="font">
@@ -29,7 +29,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>74</x>
+      <x>72</x>
       <y>13</y>
       <width>331</width>
       <height>61</height>
@@ -78,7 +78,7 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>119</x>
       <y>240</y>
       <width>191</width>
       <height>61</height>
@@ -195,9 +195,9 @@ background-color: rgb(170, 255, 127);
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>80</y>
-      <width>401</width>
+      <x>10</x>
+      <y>74</y>
+      <width>391</width>
       <height>81</height>
      </rect>
     </property>
@@ -212,7 +212,7 @@ background-color: rgb(170, 255, 127);
       <rect>
        <x>4</x>
        <y>2</y>
-       <width>391</width>
+       <width>381</width>
        <height>71</height>
       </rect>
      </property>
@@ -237,7 +237,7 @@ color: rgb(80, 80, 80);</string>
     <widget class="QPushButton" name="btn_menual">
      <property name="geometry">
       <rect>
-       <x>278</x>
+       <x>270</x>
        <y>51</y>
        <width>111</width>
        <height>21</height>

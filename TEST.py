@@ -17,16 +17,12 @@ class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setFixedSize(QSize(427, 330))
         self.stackedWidget.setCurrentIndex(0)
         self.dialog = dialog()
 
         # QMediaPlayer 객체 생성 및 설정
         self.media_player = QMediaPlayer()
-        self.media_player.setVolume(50)
         self.media_player.setMedia(QMediaContent(QUrl.fromLocalFile("sound.wav")))
-
-
 
         self.timerLabel.setText("00:00:00")
         self.btn_start.clicked.connect(self.start_timer)
@@ -48,13 +44,11 @@ class WindowClass(QMainWindow, form_class):
         self.model_1 = load_model('models_TEST/model_1.h5')
         self.model_2 = load_model('models_TEST/model_2.h5')
 
-
         self.timeResetSig = False
         self.successSig = False
         self.successSig2 = False
 
         self.functions = [self.arms_up,self.cross_arm]
-
     def show_menual(self): # 다이얼로그 폼열기
         self.dialog.show()
 

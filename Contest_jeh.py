@@ -17,16 +17,13 @@ class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setFixedSize(QSize(427, 330))
+        self.setFixedSize(QSize(412, 326))
         self.stackedWidget.setCurrentIndex(0)
         self.dialog = dialog()
 
         # QMediaPlayer 객체 생성 및 설정
         self.media_player = QMediaPlayer()
-        self.media_player.setVolume(50)
         self.media_player.setMedia(QMediaContent(QUrl.fromLocalFile("sound.wav")))
-
-
 
         self.timerLabel.setText("00:00:00")
         self.btn_start.clicked.connect(self.start_timer)
@@ -48,13 +45,11 @@ class WindowClass(QMainWindow, form_class):
         self.model_1 = load_model('models_TEST/model_1.h5')
         self.model_2 = load_model('models_TEST/model_2.h5')
 
-
         self.timeResetSig = False
         self.successSig = False
         self.successSig2 = False
 
         self.functions = [self.arms_up,self.cross_arm]
-
     def show_menual(self): # 다이얼로그 폼열기
         self.dialog.show()
 
@@ -116,7 +111,6 @@ class WindowClass(QMainWindow, form_class):
         while cap.isOpened():
             # 프레임 읽어오기
             ret, img = cap.read()
-            img0 = img.copy()
             # 프레임 좌우반전 및 컬러 채널 변환
             img = cv2.flip(img, 1)
             img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -215,11 +209,12 @@ class WindowClass(QMainWindow, form_class):
                 else:
                     self.count_time1 = 0
             # 화면에 보여주기
-            cv2.imshow('img', img)
+            cv2.imshow('cam', img)
             # 'q' 버튼을 누르면 반복문 종료
             if cv2.waitKey(1) == ord('q') or self.count_time1 >= 5 or self.timeResetSig == True:
-                cap.release()
-                cv2.destroyAllWindows()
+               break
+        cap.release()
+        cv2.destroyAllWindows()
 
     def cross_arm(self):
         print("팔교차스트레칭")
@@ -365,12 +360,13 @@ class WindowClass(QMainWindow, form_class):
                     self.count_time1 = 0
                     self.count_time2 = 0
             # 화면에 보여주기
-            cv2.imshow('img', img)
+            cv2.imshow('cam', img)
             # 'q' 버튼을 누르면 반복문 종료
             if cv2.waitKey(1) == ord('q') or (self.successSig == True and self.successSig2 == True)\
             or self.timeResetSig == True:
-                cap.release()
-                cv2.destroyAllWindows()
+                break
+        cap.release()
+        cv2.destroyAllWindows()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
