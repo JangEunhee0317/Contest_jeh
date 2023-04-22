@@ -53,7 +53,7 @@ class WindowClass(QMainWindow, form_class):
         self.successSig = False
         self.successSig2 = False
 
-        self.functions = [self.arms_up,self.test]
+        self.functions = [self.arms_up,self.cross_arm]
 
     def show_menual(self): # 다이얼로그 폼열기
         self.dialog.show()
@@ -223,7 +223,7 @@ class WindowClass(QMainWindow, form_class):
                 cap.release()
                 cv2.destroyAllWindows()
 
-    def test(self):
+    def cross_arm(self):
         print("테스트 해보는 중")
         self.timeResetSig = False
         self.successSig = False
