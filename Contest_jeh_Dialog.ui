@@ -81,6 +81,7 @@
       <pointsize>11</pointsize>
       <weight>50</weight>
       <bold>false</bold>
+      <kerning>true</kerning>
      </font>
     </property>
     <property name="styleSheet">

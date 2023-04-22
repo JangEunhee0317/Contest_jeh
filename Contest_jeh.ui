@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>427</width>
+    <width>418</width>
     <height>330</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>74</x>
       <y>13</y>
       <width>331</width>
       <height>61</height>
@@ -53,7 +53,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>-2</x>
       <y>-3</y>
       <width>81</width>
       <height>81</height>
@@ -197,7 +197,7 @@ background-color: rgb(170, 255, 127);
      <rect>
       <x>5</x>
       <y>80</y>
-      <width>411</width>
+      <width>401</width>
       <height>81</height>
      </rect>
     </property>
@@ -211,14 +211,14 @@ background-color: rgb(170, 255, 127);
      <property name="geometry">
       <rect>
        <x>4</x>
-       <y>4</y>
-       <width>401</width>
-       <height>61</height>
+       <y>2</y>
+       <width>391</width>
+       <height>71</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>맑은 고딕 Semilight</family>
+       <family>한컴 말랑말랑 Regular</family>
        <pointsize>9</pointsize>
        <weight>50</weight>
        <bold>false</bold>
@@ -229,16 +229,16 @@ background-color: rgb(170, 255, 127);
 color: rgb(80, 80, 80);</string>
      </property>
      <property name="text">
-      <string>1시간 동안 30분마다 알람이 울리며, 스트레칭을 완료할 때
-까지 알람음이 계속 울립니다. 스트레칭으로 건강을 유지 해
-보세요. 사용방법을 읽어주세요.</string>
+      <string>1시간 동안 30분마다 알람이 울리며, 스트레칭을 완료할 때 까지
+알람음이 계속 울립니다. 스트레칭으로 건강을 유지 해 보세요.
+자세한 내용은 사용방법을 읽어주세요.</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btn_menual">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>50</y>
+       <x>278</x>
+       <y>51</y>
        <width>111</width>
        <height>21</height>
       </rect>
