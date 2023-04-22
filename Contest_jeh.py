@@ -88,10 +88,8 @@ class WindowClass(QMainWindow, form_class):
                     # 1시간이 되면 시간초기화
             self.timeReset()
             self.media_player.stop()
-
         else :
             self.media_player.stop()
-
     def arms_up(self):
         self.timeResetSig = False
         self.successSig = False
