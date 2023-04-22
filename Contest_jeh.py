@@ -229,16 +229,12 @@ class WindowClass(QMainWindow, form_class):
         self.count_time1 = 0
         self.count_time2 = 0
         self.counter = 0
-
-
-
         # 레이블 정의
         actions = [
             'not_stretching'
             ,'left stretching'
             ,'right stretching'
         ]
-
         # MediaPipe pose 모델 정의
         mp_pose = mp.solutions.pose
         mp_drawing = mp.solutions.drawing_utils
