@@ -27,9 +27,9 @@ class WindowClass(QMainWindow, form_class):
         self.media_player = QMediaPlayer()
         self.media_player.setMedia(QMediaContent(QUrl.fromLocalFile("sound.wav")))
 
-        self.timerLabel.setText("00:00:00")
+        self.timerLabel.setText("00:01:00")
         self.btn_start.clicked.connect(self.start_timer)
-        self.time = QTime(0, 0, 0)
+        self.time = QTime(0, 1, 0)
         self.timer = QTimer()
 
         self.timer.timeout.connect(self.update_timer_label)
@@ -68,15 +68,15 @@ class WindowClass(QMainWindow, form_class):
         self.timeResetSig = True
         self.stackedWidget.setCurrentIndex(0)
         self.timer.stop()
-        self.timerLabel.setText("00:00:00")
-        self.time = QTime(0, 0, 0)
+        self.timerLabel.setText("00:01:00")
+        self.time = QTime(0, 1, 0)
         self.successSig = False
         self.successSig2 = False
         self.count_time1 = 0
         self.count_time2 = 0
         self.counter = 0
     def update_timer_label(self):
-        self.time = self.time.addSecs(1)
+        self.time = self.time.addSecs(-1)
         self.timerLabel.setText(self.time.toString("hh:mm:ss"))
         if self.time.second() % int(self.comboBox.currentText()) == 0:
                     # 테스트용 콤보박스 선택한 초마다 웹캠 창 열기
