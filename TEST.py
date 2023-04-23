@@ -52,9 +52,11 @@ class WindowClass(QMainWindow, form_class):
         self.successSig2 = False
 
         self.functions = [self.arms_up,self.cross_arm]
+
+    def closeEvent(self, QCloseEvent): # 메인윈도우 종료이벤트
+        self.close_menual()
     def show_menual(self): # 다이얼로그 폼열기
         self.dialog.show()
-
     def close_menual(self): # 다이얼로그 폼닫기
         self.dialog.close()
     def start_timer(self): # 시작 버튼
