@@ -2,6 +2,7 @@ import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 from dialog import dialog #다이얼로그 폼에서 다이얼로그 클래스 가져오기
 import cv2
 import mediapipe as mp
@@ -17,6 +18,7 @@ class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.setWindowIcon(QIcon('timer_icon_153935.png'))
         self.stackedWidget.setCurrentIndex(0)
         self.comboBox.setCurrentIndex(2)
         self.dialog = dialog()

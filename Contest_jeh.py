@@ -1,6 +1,7 @@
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from dialog import dialog #다이얼로그 폼에서 다이얼로그 클래스 가져오기
 import cv2
@@ -8,7 +9,6 @@ import mediapipe as mp
 import numpy as np
 from tensorflow.keras.models import load_model
 import datetime
-import time
 import random
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 
@@ -19,6 +19,7 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
         self.setFixedSize(QSize(415, 326))
+        self.setWindowIcon(QIcon('timer_icon_153935.png'))
         self.stackedWidget.setCurrentIndex(0)
         self.comboBox.setCurrentIndex(2)
         self.dialog = dialog()
