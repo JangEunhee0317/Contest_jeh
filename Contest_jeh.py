@@ -17,7 +17,7 @@ class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setFixedSize(QSize(412, 326))
+        self.setFixedSize(QSize(415, 326))
         self.stackedWidget.setCurrentIndex(0)
         self.comboBox.setCurrentIndex(2)
         self.dialog = dialog()

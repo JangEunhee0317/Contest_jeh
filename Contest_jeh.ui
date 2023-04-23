@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>412</width>
+    <width>415</width>
     <height>326</height>
    </rect>
   </property>
@@ -195,9 +195,9 @@ background-color: rgb(170, 255, 127);
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>6</x>
       <y>74</y>
-      <width>391</width>
+      <width>401</width>
       <height>81</height>
      </rect>
     </property>
@@ -212,7 +212,7 @@ background-color: rgb(170, 255, 127);
       <rect>
        <x>4</x>
        <y>2</y>
-       <width>381</width>
+       <width>391</width>
        <height>71</height>
       </rect>
      </property>
@@ -229,8 +229,8 @@ background-color: rgb(170, 255, 127);
 color: rgb(80, 80, 80);</string>
      </property>
      <property name="text">
-      <string>1시간 동안 지정 시간마다 알람이 울리며, 스트레칭을 완료할 때 까지
-알람음이 계속 울립니다. 스트레칭으로 건강을 유지 해 보세요.
+      <string>1시간 동안 지정 시간마다 알람이 울리며, 스트레칭을 완료할 때
+까지 알람음이 계속 울립니다. 스트레칭으로 건강을 유지 해보세요.
 자세한 내용은 사용방법을 읽어주세요.</string>
      </property>
     </widget>
