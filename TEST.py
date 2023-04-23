@@ -18,6 +18,7 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
         self.stackedWidget.setCurrentIndex(0)
+        self.comboBox.setCurrentIndex(2)
         self.dialog = dialog()
 
         # QMediaPlayer 객체 생성 및 설정
@@ -26,7 +27,7 @@ class WindowClass(QMainWindow, form_class):
 
         self.timerLabel.setText("00:00:00")
         self.btn_start.clicked.connect(self.start_timer)
-        self.time = QTime(0, 0, 55)
+        self.time = QTime(0, 0, 0)
         self.timer = QTimer()
 
         self.timer.timeout.connect(self.update_timer_label)
@@ -57,7 +58,9 @@ class WindowClass(QMainWindow, form_class):
     def start_timer(self): # 시작 버튼
         self.stackedWidget.setCurrentIndex(1)
         self.timer.start(1000)
+        self.comboBox.setEnabled(False)
     def timeReset(self): # 초기화 버튼
+        self.comboBox.setEnabled(True)
         self.timeResetSig = True
         self.stackedWidget.setCurrentIndex(0)
         self.timer.stop()
@@ -71,8 +74,8 @@ class WindowClass(QMainWindow, form_class):
     def update_timer_label(self):
         self.time = self.time.addSecs(1)
         self.timerLabel.setText(self.time.toString("hh:mm:ss"))
-        if self.time.second() % 30 == 0:
-                    # 테스트용 30초마다 웹캠 창 열기
+        if self.time.second() % int(self.comboBox.currentText()) == 0:
+                    # 테스트용 콤보박스 선택한 초마다 웹캠 창 열기
                     # TODO: arms_up 모델 웹캠 열기
             # 소리 재생
             self.media_player.play()

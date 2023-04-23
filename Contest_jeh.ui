@@ -78,10 +78,10 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>119</x>
-      <y>240</y>
-      <width>191</width>
-      <height>61</height>
+      <x>130</x>
+      <y>260</y>
+      <width>161</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -92,9 +92,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
-        <width>151</width>
-        <height>51</height>
+        <y>0</y>
+        <width>131</width>
+        <height>41</height>
        </rect>
       </property>
       <property name="font">
@@ -142,15 +142,15 @@ background-color: rgb(170, 255, 127);
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
-        <width>151</width>
-        <height>51</height>
+        <y>0</y>
+        <width>131</width>
+        <height>41</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>한국기계연구원_Light</family>
-        <pointsize>18</pointsize>
+        <pointsize>14</pointsize>
         <weight>50</weight>
         <bold>false</bold>
        </font>
@@ -229,7 +229,7 @@ background-color: rgb(170, 255, 127);
 color: rgb(80, 80, 80);</string>
      </property>
      <property name="text">
-      <string>1시간 동안 30분마다 알람이 울리며, 스트레칭을 완료할 때 까지
+      <string>1시간 동안 지정 시간마다 알람이 울리며, 스트레칭을 완료할 때 까지
 알람음이 계속 울립니다. 스트레칭으로 건강을 유지 해 보세요.
 자세한 내용은 사용방법을 읽어주세요.</string>
      </property>
@@ -266,10 +266,10 @@ background-color: rgb(230, 230, 230);</string>
    <widget class="QLabel" name="timerLabel">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>160</y>
-      <width>361</width>
-      <height>81</height>
+      <x>20</x>
+      <y>186</y>
+      <width>381</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -281,10 +281,102 @@ background-color: rgb(230, 230, 230);</string>
      </font>
     </property>
     <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>00 : 00 : 00</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>318</x>
+      <y>160</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>한국기계연구원_Light</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+background-color: rgb(212, 212, 212, 60);
+border: 1px solid black;
+border-radius: 12px;
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>20</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>30</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="timerLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>371</x>
+      <y>160</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>한국기계연구원_Light</family>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
      <string notr="true">color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
-     <string>00:00:00</string>
+     <string>분</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timerLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>160</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>한국기계연구원_Light</family>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>알람간격 선택</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
