@@ -19,25 +19,30 @@
   <widget class="QPushButton" name="btn_ok">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>486</y>
-     <width>111</width>
+     <x>270</x>
+     <y>481</y>
+     <width>71</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>한국기계연구원_Light</family>
-     <pointsize>15</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(191, 191, 191);</string>
+    <string notr="true">QPushButton
+{
+border: 1px solid black;
+border-radius: 15px;
+background-color: rgb(240, 240, 240);
+}</string>
    </property>
    <property name="text">
     <string>확 인</string>
